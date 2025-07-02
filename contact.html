@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="./">Home</a> | <a href="about me.html">About Me</a> | <a href="myproject.html">My Project</a> | <a href="myhobbies.html">My Hobbies</a> | <a href="contact.html">Contact Us</a>
+    <div class="topnav-right">
+      <a href="signin.html">Sign In</a> | <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <label>Contact Method:</label><br>
+      <input type="radio" name="contact_method" value="email" checked>Email
+      <input type="radio" name="contact_method" value="phone">Phone<br><br>
+
+      <label>Reason for Contact:</label><br>
+      <input type="checkbox" name="reason" value="feedback"> Feedback
+      <input type="checkbox" name="reason" value="support"> Support
+      <input type="checkbox" name="reason" value="general"> General Inquiry<br><br>
+
+      <label for="category">Topic Category:</label>
+      <select id="category" name="category">
+        <option value="general">General</option>
+        <option value="tech">Technical</option>
+        <option value="billing">Billing</option>
+      </select>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</body>
+</html>
