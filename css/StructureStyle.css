@@ -11,7 +11,7 @@ body {
 .header {
     padding: 20px;
     text-align: center;
-    background: #4617cd;
+    background: #92b3cc;
     color: white;
 }
 
@@ -51,7 +51,7 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #4617cd;
+    background: #92b3cc;
     color: rgb(24, 24, 24);
     line-height: 0.2;
 }
