@@ -14,36 +14,31 @@
 
   <div class="content">
     <h2>Contact Me</h2>
-    <form action="#" method="post">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject">
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <label>Contact Method:</label><br>
-      <input type="radio" name="contact_method" value="email" checked>Email
-      <input type="radio" name="contact_method" value="phone">Phone<br><br>
-
-      <label>Reason for Contact:</label><br>
-      <input type="checkbox" name="reason" value="feedback"> Feedback
-      <input type="checkbox" name="reason" value="support"> Support
-      <input type="checkbox" name="reason" value="general"> General Inquiry<br><br>
-
-      <label for="category">Topic Category:</label>
-      <select id="category" name="category">
+    <form action="" method="post">
+      <input type="text" placeholder="Enter your full name" required/><br>
+      <input type="email" placeholder="Enter your email address" required /><br>
+      <input type="tel" placeholder="Enter your phone number" required /><br>
+      <select name="reason" required>
+        <option value="" disabled selected>Select Reason for Contact</option>
+        <option value="feedback">Feedback</option>
+        <option value="support">Support</option>
+        <option value="general">General Inquiry</option>
+      </select>
+      <select name="contactMethod" required>
+        <option value="" disabled selected>Select Contact Method</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+        <option value="chat">Chat</option>
+      </select>
+      <select name="category" required>
+        <option value="" disabled selected>Select Category</option>
         <option value="general">General</option>
-        <option value="tech">Technical</option>
+        <option value="technical">Technical</option>
         <option value="billing">Billing</option>
       </select>
-
-      <input type="submit" value="Send Message">
+       <textarea name="message" rows="5" cols="30" placeholder="Enter your message here..." required></textarea><br>
+    <input type="submit" value="Send Message" />
+    <input type="reset" value="Clear" />
     </form>
   </div>
 </body>

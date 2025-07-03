@@ -16,7 +16,7 @@ select {
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: #4CAF50;
+    background-color: #333494;
     color: white;
     padding: 14px 20px;
     border: none;
@@ -26,5 +26,5 @@ input[type="reset"] {
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #45a049;
+    background-color: #333494;
 }

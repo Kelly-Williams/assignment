@@ -1,9 +1,11 @@
 /* StructureStyle.css */
 /* This file contains the CSS styles for the structure of the webpage */
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -11,7 +13,7 @@ body {
 .header {
     padding: 20px;
     text-align: center;
-    background: #92b3cc;
+    background: #003366; /* Dark blue */
     color: white;
 }
 
@@ -21,8 +23,9 @@ body {
     display: block;
     width: 60%;
 }
+
 .content {
-    background-color: #f1f1f1;
+    background-color: #e6f0ff; /* Vibrant light blue */
     padding: 20px;
     float: left;
     width: 66.66%;
@@ -31,7 +34,7 @@ body {
 .sidebar {
     float: left;
     width: 33.33%;
-    background-color: #f1f1f1;
+    background-color: #cce0ff; /* Softer blue for sidebar */
     padding: 15px;
 }
 
@@ -51,7 +54,7 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #92b3cc;
-    color: rgb(24, 24, 24);
+    background: #003366; /* Same dark blue as header */
+    color: #cce0ff; /* Light blue text */
     line-height: 0.2;
 }
