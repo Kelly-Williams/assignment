@@ -3,6 +3,12 @@
 <head>
   <title>Sign Up</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <div class="topnav">
@@ -14,20 +20,33 @@
 
   <div class="content">
     <h2>Sign Up</h2>
-    <form action="" method="post">
-      <input type="text" placeholder="Enter your full name" required/><br>
-      <input type="email" placeholder="Enter your email address" required /><br>
+    <form id="signupForm" onsubmit="return validateForm()">
+      <input type="text" id="fullname" placeholder="Enter your full name" required /><br>
+      <span class="error" id="nameError"></span><br>
+
+      <input type="email" id="email" placeholder="Enter your email address" required /><br>
+      <span class="error" id="emailError"></span><br>
+
       <input type="tel" placeholder="Enter your phone number" required /><br>
+
       <input type="password" placeholder="Create a password" required /><br>
-      <input type="color" placeholder="Choose a color" required /><br>
-      <input type="date" placeholder="Enter your date of birth" required /><br>
-      <input type="range" placeholder="How tech-savvy are you? (0-10)" required /><br>
-      <input type="file" placeholder="Upload your photo" required /><br>
+
+      <input type="color" required /><br>
+
+      <input type="date" id="dob" required /><br>
+      <span class="error" id="dateError"></span><br>
+
+      <input type="range" min="0" max="10" required /><br>
+
+      <input type="file" required /><br>
+
       <input type="text" placeholder="About You" required /><br>
       <br>
       <input type="submit" value="Sign Up" />
       <a href="signin.html">Already have an account? Sign In</a>
     </form>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
