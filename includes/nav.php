@@ -4,7 +4,8 @@
     <a href="myproject.php">My Project</a> 
     <a href="myhobbies.php">My Hobbies</a> 
     <a href="contact.php">Contact Us</a>
-
+    <a href="persons.php">Users</a>
+    <a href="edit-user.php">Edit User</a>
 
 <div class="topnav-right">
     <?php if(isset($_SESSION['consort'])) { ?>
