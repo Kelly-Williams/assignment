@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Home</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <div class="topnav">
-    <a href="./">Home</a> | <a href="about me.html">About Me</a> | <a href="myproject.html">My Project</a> | <a href="myhobbies.html">My Hobbies</a> | <a href="contact.html">Contact Us</a>
-    <div class="topnav-right">
-      <a href="signin.html">Sign In</a> | <a href="signup.html">Sign Up</a>
-    </div>
-  </div>
+<?php
+    require 'config/dbConnect.php';
+    require 'includes/header.php';
+    require 'includes/nav.php';
+?>
 
   <!-- Sidebar and main content wrapper -->
   <div class="main-container">
@@ -45,11 +36,6 @@
     </div>
 
     
-  <!-- Footer Section -->
-  <div class="footer">
-    <p>© 2023 Your Company Name. All rights reserved.</p>
-    <p>Contact us at <a href="mailto:dbt@yahoo.com">dbt@yahoo.com</a></p>
-  </div>
-
-</body>
-</html>
+<?php
+    require 'includes/footer.php';
+?>

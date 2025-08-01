@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .error {
-      color: red;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-  <div class="topnav">
-    <a href="./">Home</a> | <a href="about me.html">About Me</a> | <a href="myproject.html">My Project</a> | <a href="myhobbies.html">My Hobbies</a> | <a href="contact.html">Contact Us</a>
-    <div class="topnav-right">
-      <a href="signin.html">Sign In</a> | <a href="signup.html">Sign Up</a>
-    </div>
-  </div>
+<?php
+    require 'config/dbConnect.php';
+    require 'includes/header.php';
+    require 'includes/nav.php';
+?>
 
   <div class="content">
     <h2>Sign Up</h2>
@@ -48,5 +34,6 @@
   </div>
 
   <script src="script.js"></script>
-</body>
-</html>
+<?php
+    require 'includes/footer.php';
+?>
